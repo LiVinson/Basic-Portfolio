@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+ <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Lisa Vinson</title>
+
+</head>
+
+<body>
+<!--Header:
+     headerfull is the entire header stretched across the entire page. The header div has a width of 960
+    and is the parent for the h1 name, and 3 elements for About, Portfolio, and Contact (links).
+    Headerfull should have set padding and bottom margin (same on all pages). -->
+
+<div id="headerfull">
+    <div id="header">
+        <h1 id="name">Lisa Vinson</h1>
+
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!--The container div should be 960 and encompass the About Me Container and the Connect with Me sidebar.-->
+
+<div id="container ">
+
+   
+    <section id="contact">
+
+        <h1>Contact</h1>
+
+        <form>
+            Name <br>
+            <input type="text"><br>
+
+            Email <br>
+            <input type="email"><br>
+            <!--Need to figure out how to set message box size to match instructions-->
+            Message<br>
+            <input type="text"><br>
+            
+             <!--Need to confirm if submission should go somewhere-->
+            <input type="submit" value="Submit">
+
+        </form>
+ 
+        
+    </section>
+
+    <sidebar id="connect"> 
+        <h2> Connect with Me</h2>
+        <div id=icons>
+            <img src="assets\images\githubicon.png" alt=Github Icon>
+            <img src="assets\images\linkedicon.png" alt=LinkedIn Icon>
+            <img src="assets\images\stackicon.png" alt=Stack Overflow Icon>
+
+        </div>
+
+    </sidebar>
+
+</div>
+
+<!--Footer: SHouls stretch across the entire page, with a padding similar to the header.
+     Make it sticky to the bottom of the window -->
+<footer id ="footer">
+        <p>Copyright 2017 Lisa Vinson</p>
+</footer>

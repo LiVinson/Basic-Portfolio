@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;}
+
+body {
+    background-image: url("../images/concrete_seamless.png");
+}
+
+#headerfull {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+
+#header {
+    display: flex;
+    width: 960px;
+    background: #ffffff;
+    margin: auto;
+}
+
+#name {
+    background: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 30px;
+    width: fit-content;
+    padding: 25px;
+}
+
+
+#aboutlink, #contactlink, #portfoliolink {
+    border: 1px solid gray;
+}
+
+#portfoliolink {
+    margin-right: 0;
+}
+

@@ -91,7 +91,7 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
     height: fit-content;
 }
 
-.connect-header {
+.connectHeader {
     border-bottom: 1px solid #dddddd;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 24px;
@@ -122,12 +122,12 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
 
 /***Main Content Section (General)**/
 
-.main-content {
+.mainContent {
     width: 650px;
     border: 1px solid #dddddd;
     padding-bottom: 15px;
  }
- .main-header {
+ .mainHeader {
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 30px;
     width: 590px;
@@ -145,7 +145,7 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
 
 /*About Me Page (Index.html)*/
 
-.main-body {
+.mainBody {
     width: 590px;
     margin: auto;
 }
@@ -177,4 +177,17 @@ p {
 
 /*Portfolio Page*/
 
+.mainPortfolio {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.portfolioPics {
+    width: 280px;
+    height: 210px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 

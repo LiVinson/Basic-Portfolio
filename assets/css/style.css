@@ -35,7 +35,7 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 28px;
     width: fit-content;
-    padding: 20px;
+    padding: 15px 18px 15px 18px;
     color: #ffffff;
 }
 
@@ -161,6 +161,19 @@ p {
 }
 
 /*Contact Page*/
+
+#messageBox {
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+
+#submit {
+    background: #4aaaa5;
+    padding: 5px 15px 5px 15px;
+    color: #ffffff;
+}
+
 
 /*Portfolio Page*/
 

@@ -1,3 +1,5 @@
+<!--ABOUT PAGE-->
+
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -12,83 +14,72 @@
 </head>
 
 <body>
-<!--Header:
-     headerfull is the entire header stretched across the entire page. The header div has a width of 960
+    <!--Header:
+    headerfull is the entire header stretched across the entire page. The header div has a width of 960
     and is the parent for the h1 name, and 3 elements for About, Portfolio, and Contact (links).
     Headerfull should have set padding and bottom margin (same on all pages). -->
 
-<div id="headerfull">
-    <div id="header">
-        <h1 id="name">Lisa Vinson</h1>
+    <div class="headerfull">
+        <div class="header">
+            <h1 class="name">Lisa Vinson</h1>
 
-        <div id="links">
-            <a id="aboutlink" href="#">About</a>
-            <a id="portfoliolink"href="#">Portfolio</a>
-            <a id="contactlink" href="#">Contact</a>
+            <div class="links">
+                <a class="aboutlink" href="index.html">About</a>
+                <a class="portfoliolink"href="portfolio.html">Portfolio</a>
+                <a class="contactlink" href="contact.html">Contact</a>
+                
+            </div>
             
         </div>
-        
     </div>
-</div>
 
-<!--The container div should be 960 and encompass the About Me Container and the Connect with Me sidebar.-->
+    <!--The container div should be 960 and encompass the About Me Container and the Connect with Me sidebar.-->
 
-<div id="container">
+    <div class="container">
+    
+        <section class="aboutme main-content">
 
-   
-    <section class="aboutme main-content">
+            <h1 class="main-header">About Me</h1>
 
-        <h1 class="main-header">About Me</h1>
+            <div class="main-body">
 
-        <div class="main-body">
+                    <img id="profilepic" src="assets/images/profilepic1.jpg" alt=profilepictire width=275 height=275>
 
-                <img id="profilepic" src="assets/images/profilepic1.jpg" alt=profilepictire width=300 height=225>
+                    <p class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum viverra 
+                    imperdiet. Quisque eleifend, tortor tempus interdum maximus, sem odio blandit 
+                    ex, non lacinia diam leo quis ipsum. Nullam tristique, quam et luctus tempor,
+                    risus massa faucibus nisl, sed imperdiet nulla sem vel lorem. Nulla non 
+                    finibus lacus. Integer odio purus, varius vel dolor at, sollicitudin fermentum 
+                    imperdiet. Quisque eleifend, tortor tempus interdum maximus, sem odio blandit 
+                    ex, non lacinia diam leo quis ipsum. Nullam tristique, quam et luctus tempor.</p>
+                        
+                    <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum viverra 
+                    imperdiet. Quisque eleifend, tortor tempus interdum maximus, sem odio blandit 
+                    ex, non lacinia diam leo quis ipsum. Nullam tristique, quam et luctus tempor,
+                    risus massa faucibus nisl, sed imperdiet nulla sem vel lorem. Nulla non 
+                    </p>
+                
+            </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum viverra 
-                imperdiet. Quisque eleifend, tortor tempus interdum maximus, sem odio blandit 
-                ex, non lacinia diam leo quis ipsum. Nullam tristique, quam et luctus tempor,
-                risus massa faucibus nisl, sed imperdiet nulla sem vel lorem. Nulla non 
-                finibus lacus. Integer odio purus, varius vel dolor at, sollicitudin fermentum 
-                imperdiet. Quisque eleifend, tortor tempus interdum maximus, sem odio blandit 
-                ex, non lacinia diam leo quis ipsum. Nullam tristique, quam et luctus tempor.</p>
-                    
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum viverra 
-                imperdiet. Quisque eleifend, tortor tempus interdum maximus, sem odio blandit 
-                ex, non lacinia diam leo quis ipsum. Nullam tristique, quam et luctus tempor,
-                risus massa faucibus nisl, sed imperdiet nulla sem vel lorem. Nulla non 
-                finibus lacus. Integer odio purus, varius vel dolor at, sollicitudin fermentum 
-                imperdiet. Quisque eleifend, tortor tempus interdum maximus, sem odio blandit 
-                ex, non lacinia diam leo quis ipsum. Nullam tristique, quam et luctus tempor.</p>
-            
-        </div>
+        </section>
 
-    </section>
+        <sidebar class="connect"> 
+            <h2 class="connect-header"> Connect with Me</h2>
+            <div class="icons">
+                <a href="https://github.com/LiVinson" target="_blank"> <img class="github" src="assets\images\githubicon.png" alt="Github account Link"></a>
+                <a href="https://www.linkedin.com/in/lisavinson1" target="_blank"> <img class="linkedin" src="assets\images\linkedicon.png" alt="LinkedIn account Link"></a>
+                <a href="https://stackoverflow.com/users/7484108/li-vinson?tab=profile" target="_blank"><img class="stack" src="assets\images\stackicon.png" alt="Stack Overflow Icon"></a>
+            </div>
 
-    <sidebar id="connect"> 
-        <h2 id="connect.header"> Connect with Me</h2>
-        <div class="icons">
-            <img src="assets\images\githubicon.png" alt=Github Icon>
-            <img src="assets\images\linkedicon.png" alt=LinkedIn Icon>
-            <img src="assets\images\stackicon.png" alt=Stack Overflow Icon>
+        </sidebar>
 
-        </div>
+    </div>
 
-    </sidebar>
-
-</div>
-
-<!--Footer: SHouls stretch across the entire page, with a padding similar to the header.
-     Make it sticky to the bottom of the window -->
-<footer id ="footer">
-        <p>Copyright &#169; 2017 Lisa Vinson</p>
-</footer>
-
-
-
-
-
-
-
+    <!--Footer: Should stretch across the entire page, with a padding similar to the header.
+        Make it sticky to the bottom of the window -->
+    <footer class ="footer">
+            <p class="copyright">Copyright &#169; 2017 Lisa Vinson</p>
+    </footer>
 
 </body>
 

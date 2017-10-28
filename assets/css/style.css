@@ -11,6 +11,16 @@ body {
     line-height: 1.75
 }
 
+a:hover {
+    color: #4aaaa5;
+    font-weight: bold;
+}
+
+a:visited {
+   color: #034f84;
+}
+
+
 /*header start: 1 element across the entire page (headerfull), header inside of headerfull, centered. Header set to flex 
 container. Contains Name and Links elements. Spaced to ediges of the header div using justify-content: space between.*/
 
@@ -33,10 +43,10 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
 .name {
     background: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 28px;
     width: fit-content;
     padding: 15px 18px 15px 18px;
     color: #ffffff;
+    font-size: 30px;
 }
 
 .aboutlink,
@@ -109,13 +119,31 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
     margin-bottom: 40px;
 }
 
+.github:hover {
+    opacity:.75;
+    border-bottom:2px solid #666666;
+}
+
+.linkedin:hover {
+    opacity:.75;
+    border-bottom:2px solid #666666;
+}
+
+.stack:hover {
+    opacity:.75;
+    border-bottom:2px solid #666666;
+}
+
 .github,
 .linkedin, 
 .stack {
     width: 64px;
     height: 64px;
     margin-left: 5px;
+    box-sizing: content-box;
+    padding-bottom: 2px;
 }
+
 
 /**Sidebar end**/
 
@@ -135,12 +163,10 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
     margin-bottom: 20px;
     margin-top: 10px;
     padding-top: 20px;
-    padding-bottom: 25px;
-    border-bottom: 2px solid #cccccc;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding-bottom: 20px;
     color: #4aaaa5;
-    font-size: 28px;
     font-weight: bold;
+    border-bottom:2px solid #dddddd;
 }
 
 /*About Me Page (Index.html)*/
@@ -156,7 +182,8 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
     float: left;
 }
 
-p {
+.para1,
+.para2 {
     margin-bottom:15px;
 }
 
@@ -165,7 +192,6 @@ p {
 #messageBox {
     margin-bottom: 15px;
     width: 100%;
-
 }
 
 #submit {
@@ -174,6 +200,10 @@ p {
     color: #ffffff;
 }
 
+#submit:hover {
+    padding: 6px 16px 6px 16px;
+    opacity:.75;
+}
 
 /*Portfolio Page*/
 
@@ -181,13 +211,34 @@ p {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-   
 }
 
 .portfolioPics {
     width: 280px;
     height: 210px;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
+.portfolio {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.bannertext {
+    background: #4aaaa5;
+    position: absolute;
+    bottom: 20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    color: #ffffff;
+    z-index: 5;
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width:100%;
+}
+
+.portfolio:hover {
+    outline: 3px solid #4aaaa5;
+    outline-offset:10px;
+}
